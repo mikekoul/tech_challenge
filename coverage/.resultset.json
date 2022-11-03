@@ -211,6 +211,9 @@
           1,
           1,
           1,
+          1,
+          null,
+          1,
           null,
           null,
           null
@@ -264,27 +267,9 @@
           null
         ]
       },
-      "/Users/michaelkoulouvaris/turing/4module/challenges/tech-challenge/app/controllers/api/v1/subscriptions_controller.rb": {
+      "/Users/michaelkoulouvaris/turing/4module/challenges/tech-challenge/app/controllers/api/v1/customer_subscriptions_controller.rb": {
         "lines": [
           1,
-          1,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          0,
-          null,
-          null,
-          null,
           1,
           1,
           1,
@@ -298,7 +283,7 @@
           null
         ]
       },
-      "/Users/michaelkoulouvaris/turing/4module/challenges/tech-challenge/app/serializers/subscription_serializer.rb": {
+      "/Users/michaelkoulouvaris/turing/4module/challenges/tech-challenge/app/serializers/customer_subscriptions_serializer.rb": {
         "lines": [
           1,
           1,
@@ -307,6 +292,6 @@
         ]
       }
     },
-    "timestamp": 1667443192
+    "timestamp": 1667447500
   }
 }
