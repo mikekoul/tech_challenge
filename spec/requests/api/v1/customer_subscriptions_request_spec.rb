@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "Customer Tea Subscription API" do
-  it 'Can return all of a customers tea subscriptions' do
+  it 'Can return all of a customers tea subscriptions whether active or cancelled' do
     mike = Customer.create!(first_name: 'Mike', last_name: 'Koul', email: 'mike@gmail.com', address: '123 Main Street')
     bob = Customer.create!(first_name: 'Bob', last_name: 'Smith', email: 'bob@gmail.com', address: '727 Main Street')
     green_tea = Tea.create!(title: 'Green Tea', description: 'Japanese oolong green tea leaves', temperature: '175 F', brew_time: '3 minutes')
