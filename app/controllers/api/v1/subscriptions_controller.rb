@@ -8,6 +8,15 @@ class Api::V1::SubscriptionsController < ApplicationController
     end
   end
 
+  def update
+    subscription = Subscription.find(params[:id])
+    if subscription.update(sub_params)
+      render json: SubscriptionSerializer.new(Subscription.find(params[:id])), status: 201
+    else
+      render json: { description: "Error: Subscription Not Updated" }, status: 404
+    end
+  end
+
   private
   def sub_params
     params.permit(:title, :price, :status, :frequency, :tea_id, :customer_id)

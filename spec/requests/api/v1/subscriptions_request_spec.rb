@@ -38,4 +38,23 @@ describe "Subscription API" do
     expect(response_body[:attributes]).to have_key(:customer_id)
     expect(response_body[:attributes][:customer_id]).to be_a(Integer)
   end
+
+  it 'Can update a status from active to cancelled' do
+    mike = Customer.create!(first_name: 'Mike', last_name: 'Koul', email: 'mike@gmail.com', address: '123 Main Street')
+    green_tea = Tea.create!(title: 'Green Tea', description: 'Japanese oolong green tea leaves', temperature: '175 F', brew_time: '3 minutes')
+    mike_green_tea_sub = Subscription.create!(title: 'Green tea subscription', price: '$9.99', status: 0, frequency: 'Once a month', tea_id: green_tea.id, customer_id: mike.id )
+    headers = {"CONTENT_TYPE" => "application/json"}
+
+    status = mike_green_tea_sub.status
+    expect(status).to eq("active")
+
+    patch api_v1_subscription_path(mike_green_tea_sub.id), headers: headers, params: JSON.generate({ status: 1 })
+
+    response_body = JSON.parse(response.body, symbolize_names: true)[:data]
+
+    expect(response).to be_successful
+    expect(response_body).to be_a(Hash)
+    expect(response_body[:attributes]).to have_key(:status)
+    expect(response_body[:attributes][:status]).to eq("cancelled")
+  end
 end
