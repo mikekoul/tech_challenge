@@ -10,7 +10,6 @@
     <li><a href="#Routes"> ➤ Routes</a></li>
     <li><a href="#Endpoints"> ➤ Endpoints</a></li>
     <li><a href="#Schema"> ➤ Schema</a></li>
-    <li><a href="#credits"> ➤ Credits</a></li>
   </ol>
  </details>
  
@@ -46,8 +45,9 @@
 * PATCH /api/v1/subscriptions/:id
 <img src="https://user-images.githubusercontent.com/44381885/199999633-5582cb41-3b05-43ec-bf24-545ea5fe9f56.png" width=50% height=50%>
 
-
-
+<!-- Schema -->
+<h2 id="Schema"> :scroll: Schema</h2>
+<img src="https://user-images.githubusercontent.com/44381885/199999964-834dea6b-00dd-4e6e-bb80-f5b3133a2841.png" width=50% height=50%>
 
 
 
