@@ -36,8 +36,20 @@
 
   <!-- Endpoints -->
 <h2 id="Endpoints"> :book: Endpoints</h2>
+
 * GET api/v1/customers/:id/subscriptions
 <img src="https://user-images.githubusercontent.com/44381885/199998797-9017738d-306c-474b-8ec9-a6c3e60f1c7c.png" width=50% height=50%>
+
+* POST /api/v1/subscriptions
+<img src="https://user-images.githubusercontent.com/44381885/199999385-de2b1990-2796-4fdc-b257-2676ff7ca861.png" width=50% height=50%>
+
+* PATCH /api/v1/subscriptions/:id
+<img src="https://user-images.githubusercontent.com/44381885/199999633-5582cb41-3b05-43ec-bf24-545ea5fe9f56.png" width=50% height=50%>
+
+
+
+
+
 
 
 
