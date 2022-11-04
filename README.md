@@ -37,7 +37,7 @@
   <!-- Endpoints -->
 <h2 id="Endpoints"> :book: Endpoints</h2>
 * GET api/v1/customers/:id/subscriptions
-![Screen Shot 2022-11-04 at 8 24 34 AM](https://user-images.githubusercontent.com/44381885/199998797-9017738d-306c-474b-8ec9-a6c3e60f1c7c.png)
+<img src="https://user-images.githubusercontent.com/44381885/199998797-9017738d-306c-474b-8ec9-a6c3e60f1c7c.png" width=50% height=50%>
 
 
 
